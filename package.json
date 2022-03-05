@@ -1,6 +1,6 @@
 {
   "name": "multiple-websockets",
-  "version": "1.0.3",
+  "version": "1.0.6.1",
   "description": "a React Component or Hook which allow multiple websocket connections",
   "main": "./dist/index.js",
   "scripts": {
