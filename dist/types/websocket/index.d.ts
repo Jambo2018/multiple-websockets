@@ -8,6 +8,7 @@ interface WsObject {
     ws: wsObj;
     open: (url: string, reconnectTimes: number, onopen: CallBack, onMessage: CallBack, onclose: CallBack, onerror: CallBack) => void;
     startWebsocket: (url: string, reconnectTimes: number, onopen: CallBack, onMessage: CallBack, onclose: CallBack, onerror: CallBack) => void;
+    setCallBacks: (url: string, reconnectTimes: number, onopen: CallBack, onMessage: CallBack, onclose: CallBack, onerror: CallBack) => void;
     close: (url: string) => void;
     sendMessage: (url: string, info?: string) => void;
 }

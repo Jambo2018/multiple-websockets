@@ -25,8 +25,9 @@ export default function useWebsocket(url:string, times:number) {
         }
         return () => { ws.close(url) };
     }, [closed])
+
     const open = () => { ref.current = false; setClose(false); };
     const send = (e:string) => { ws.sendMessage(url, e) };
-    const close = () => { setClose(true); };
+    const close = () => { ws.close(url);setClose(true); };
     return [message, open, send, close];
 }
