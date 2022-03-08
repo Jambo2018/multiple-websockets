@@ -23,7 +23,7 @@ export default function useWebsocket(url:string, times:number) {
                     setMessage(event)
             });
         }
-        return () => { ws.close(url) };
+        // return () => { ws.close(url) };
     }, [closed])
 
     const open = () => { ref.current = false; setClose(false); };
