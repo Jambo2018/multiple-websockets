@@ -15,7 +15,9 @@
     "React",
     "websocket",
     "hook",
-    "multiple"
+    "multiple",
+    "communication",
+    "react-websocket"
   ],
   "author": "Jambo",
   "license": "ISC",
