@@ -17,7 +17,7 @@ $ yarn add multiple-websockets
 ## Example
 
 ```javascript
-import { Component } from "react";
+import { Component,useEffect } from "react";
 import { WebSocket as ws, useWebsocket } from "multiple-websockets";
 
 const wsUrl = "ws://localhost:8001";
