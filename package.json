@@ -1,6 +1,6 @@
 {
   "name": "multiple-websockets",
-  "version": "1.0.9",
+  "version": "0.1.4",
   "description": "a React Component or Hook which allow multiple websocket connections",
   "main": "./dist/index.js",
   "scripts": {
@@ -15,7 +15,9 @@
     "React",
     "websocket",
     "hook",
-    "multiple"
+    "multiple",
+    "communication",
+    "react-websocket"
   ],
   "author": "Jambo",
   "license": "ISC",
