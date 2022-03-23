@@ -18,7 +18,7 @@ $ yarn add multiple-websockets
 
 ```javascript
 import { Component } from "react";
-import { Websocket as ws, useWebsocket } from "multiple-websockets";
+import { WebSocket as ws, useWebsocket } from "multiple-websockets";
 
 const wsUrl = "ws://localhost:8001";
 class Com1 extends Component {
@@ -31,13 +31,13 @@ class Com1 extends Component {
   //error callback
   errorCB = (e) => {};
 
-  open = function () {
+  open = () => {
     ws.open(wsUrl, 5, this.openCB, this.messageCB, this.closeCB, this.errorCB);
   };
-  send = function () {
+  send = () => {
     ws.sendMessage(wsUrl, "test123");
   };
-  close = function () {
+  close = () => {
     ws.close(wsUrl);
   };
 
