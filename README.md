@@ -69,13 +69,14 @@ function Com2() {
 function App() {
   return (
     <>
+      <h1>class</h1>
       <Com1 />
+      <h1>hook</h1>
       <Com2 />
     </>
   );
 }
 ```
-
 
 ## Lisctens
 
