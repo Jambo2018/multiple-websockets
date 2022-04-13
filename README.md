@@ -69,9 +69,9 @@ function Com2() {
 function App() {
   return (
     <>
-      <h1>class</h1>
+      <h1>Class</h1>
       <Com1 />
-      <h1>hook</h1>
+      <h1>Hooks</h1>
       <Com2 />
     </>
   );
