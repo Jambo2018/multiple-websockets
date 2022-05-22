@@ -1,4 +1,4 @@
-# [multiple-websockets](https://github.com/Jambo2018/multiple-websockets) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJambo2018%2Fmultiple-websockets.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FJambo2018%2Fmultiple-websockets?ref=badge_shield)
+# [multiple-websockets](https://github.com/Jambo2018/multiple-websockets) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJambo2018%2Fmultiple-websockets.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FJambo2018%2Fmultiple-websockets?ref=badge_shield)   [![install size](https://packagephobia.com/badge?p=multiple-websockets)](https://packagephobia.com/result?p=multiple-websockets)
 
 a React Component or Hook which allow multiple websocket connections.
 
@@ -17,8 +17,8 @@ $ yarn add multiple-websockets
 ## Example
 
 ```javascript
-import { Component } from "react";
-import { Websocket as ws, useWebsocket } from "multiple-websockets";
+import { Component,useEffect } from "react";
+import { WebSocket as ws, useWebsocket } from "multiple-websockets";
 
 const wsUrl = "ws://localhost:8001";
 class Com1 extends Component {
@@ -31,13 +31,13 @@ class Com1 extends Component {
   //error callback
   errorCB = (e) => {};
 
-  open = function () {
+  open = () => {
     ws.open(wsUrl, 5, this.openCB, this.messageCB, this.closeCB, this.errorCB);
   };
-  send = function () {
+  send = () => {
     ws.sendMessage(wsUrl, "test123");
   };
-  close = function () {
+  close = () => {
     ws.close(wsUrl);
   };
 
@@ -69,14 +69,16 @@ function Com2() {
 function App() {
   return (
     <>
+      <h1>Class</h1>
       <Com1 />
+      <h1>Hooks</h1>
       <Com2 />
     </>
   );
 }
 ```
 
-
 ## Lisctens
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJambo2018%2Fmultiple-websockets.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FJambo2018%2Fmultiple-websockets?ref=badge_large)
+
